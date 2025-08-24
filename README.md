@@ -21,6 +21,10 @@ A simple **Minesweeper clone** built using **C++** and **SFML**.
 
 ---
 
+## 📷 Screenshots
+
+screenshots\Minesweeper.jpg
+
 ## 🛠️ Requirements
 
 - **C++17** or later
