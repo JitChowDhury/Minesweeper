@@ -1,22 +1,9 @@
-#include <SFML/Graphics.hpp>
+#include "Game.h"
 
 int main()
 {
-    auto window = sf::RenderWindow(sf::VideoMode({800, 600}), "Minesweeper");
-    window.setFramerateLimit(144);
+	Game* game = new Game();
+	game->Run();
 
-    while (window.isOpen())
-    {
-        sf::Event event;
-        while (window.pollEvent(event))
-        {
-            if (event.type==sf::Event::Closed)
-            {
-                window.close();
-            }
-        }
-
-        window.clear();
-        window.display();
-    }
+	delete game;
 }
